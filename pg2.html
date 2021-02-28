@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+    Aaron
+    Software Development 20s
+    Mr. Hardman
+    Pembina Trails Early COllege
+    Last modified: Feb 28
+-->
+
+<html>
+    <head>
+        <title>Purchase </title>
+
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+ 
+    </head>
+
+    <body>
+        <h1 style="text-align: center;">Buy Now</h1>
+
+        
+        
+        <form style="text-align: center;" method="GET">
+
+            <label for="shipping"><b>Please Choose A CPU:</b></label> 
+
+            <select name="CPUs" id="cpu">
+                <option value="5950x">Ryzen 9 5950x</option>
+                <option value="5900x">Ryzen 9 5900x</option>
+                <option value="5900">Ryzen 9 5900</option>
+            </select>
+
+            <br><br>
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" name="personName" size="60" maxlength="70" placeholder="Please enter your NAME here">
+
+            <br><br>
+            <label for="address"><b>Steet Address</b></label>
+            <input type="text" name="addrs" size="60" maxlength="70" placeholder="Please enter your ADDRESS here">
+
+            <br><br>
+            <label for="pstl"><b>Postal Code</b></label>
+            <input type="text" name="postCode" size="60" maxlength="70" placeholder="Please enter your POSTAL CODE here">
+
+            <br><br>
+          <label for="shipping"><b>Please Choose A Shipping Method:</b></label> 
+
+            <select name="shipping" id="shipping">
+                <option value="standard">Standard Shipping</option>
+                <option value="INSTANT">INSTANT Shipping</option>
+            </select>
+
+            <h4>Payment</h4>
+            <label> <input type="radio" name="payment-methods" value="appleGiftcard" /> Apple Giftcard </label>
+            <label> <input type="radio" name="payment-methods" value="credit"/> Credit Card </label>
+            <br><br>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" name="eml" size="60" maxlength="70" placeholder="Please enter your EMAIL here">
+
+            <br><br>
+            <input type="Submit">
+
+        </form>
+    </body>
+</html>
