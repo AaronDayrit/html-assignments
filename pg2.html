@@ -17,14 +17,16 @@
     </head>
 
     <body>
+        <!--Initial heading for buy-now screen aligned to the center-->
         <h1 style="text-align: center;">Buy Now</h1>
 
-        
-        
+        <!--Create form with text aligned to the center with GET method for buying Ryzen CPUs-->
         <form style="text-align: center;" method="GET">
 
+            <!--Shipping label-->
             <label for="shipping"><b>Please Choose A CPU:</b></label> 
 
+            <!--Select box for what cpu to buy-->
             <select name="CPUs" id="cpu">
                 <option value="5950x">Ryzen 9 5950x</option>
                 <option value="5900x">Ryzen 9 5900x</option>
@@ -33,34 +35,65 @@
 
             <br><br>
 
+            <!--Label for quantity purchased-->
+            <label for="amount"><b>Quantity</b></label>
+
+            <!--Input-type number for the quantity of cpus the user wants to purchase-->
+            <input type="number">
+
+            <br><br>
+
+            <!--Label for Username input-->
             <label for="name"><b>Name</b></label>
+
+            <!--Textbox input for the user name with set size and paceholder-->
             <input type="text" name="personName" size="60" maxlength="70" placeholder="Please enter your NAME here">
 
             <br><br>
+
+            <!--Label for user address-->
             <label for="address"><b>Steet Address</b></label>
+
+            <!--Textbox input for the user's address with size and placeholder set-->
             <input type="text" name="addrs" size="60" maxlength="70" placeholder="Please enter your ADDRESS here">
 
             <br><br>
+
+            <!--Label for postal code of user-->
             <label for="pstl"><b>Postal Code</b></label>
+
+            <!--textbox input for user's postal code with set size and placeholder-->
             <input type="text" name="postCode" size="60" maxlength="70" placeholder="Please enter your POSTAL CODE here">
 
             <br><br>
+
+            <!--Label for shipping method used-->
           <label for="shipping"><b>Please Choose A Shipping Method:</b></label> 
 
+        <!--Dropdown menu used to the shipping method of choice-->
             <select name="shipping" id="shipping">
                 <option value="standard">Standard Shipping</option>
                 <option value="INSTANT">INSTANT Shipping</option>
             </select>
 
+            <!--Payment heading-->
             <h4>Payment</h4>
+
+            <!--Label for payment with input-type radio buttons set for payment method of choice-->
             <label> <input type="radio" name="payment-methods" value="appleGiftcard" /> Apple Giftcard </label>
             <label> <input type="radio" name="payment-methods" value="credit"/> Credit Card </label>
+
             <br><br>
 
+            <!--Label for email-->
             <label for="email"><b>Email</b></label>
+
+            <!--Textbox input for user's email with set size and placeholder-->
             <input type="text" name="eml" size="60" maxlength="70" placeholder="Please enter your EMAIL here">
 
             <br><br>
+
+            <!--submit button for form-->
             <input type="Submit">
 
         </form>
